@@ -1,0 +1,26 @@
+tabela pokemons
+	id
+	id_categoria
+	id_fraqueza_1
+	id_fraqueza_2
+	id_fraqueza_3
+	nome (pokemon)
+
+tabela categorias
+	id
+	nome (categoria)
+
+tabela fraquezas
+	id
+	nome (fraqueza)
+
+https://www.pokemon.com/us/pokedex/tympole
+https://www.pokemon.com/us/pokedex/poliwhirl
+https://www.pokemon.com/us/pokedex/gyarados
+https://www.pokemon.com/us/pokedex/pinsir
+https://www.pokemon.com/us/pokedex/blacephalon
+https://www.pokemon.com/us/pokedex/shellos
+https://www.pokemon.com/us/pokedex/thundurus
+https://www.pokemon.com/us/pokedex/musharna
+https://www.pokemon.com/us/pokedex/stoutland
+https://www.pokemon.com/us/pokedex/meloetta

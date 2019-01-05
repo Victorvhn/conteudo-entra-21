@@ -1,0 +1,1 @@
+﻿UPDATE cidades SET cidade = 'It' WHERE cidade LIKE 'It%';

@@ -1,0 +1,1 @@
+﻿UPDATE cidades SET estado = 'PS' WHERE estado LIKE '%SP%';

@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B69E5D5-24D8-49CE-95EE-53D6F5AB8237}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SistemaEscola</RootNamespace>
+    <AssemblyName>SistemaEscola</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BuscaCEP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BuscaCEP.1.0.0\lib\net40\BuscaCEP.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GmailEmailService.cs" />
+    <Compile Include="ListaUsuarios.cs" />
+    <Compile Include="TelaAjuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaAjuda.Designer.cs">
+      <DependentUpon>TelaAjuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaCadastroLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaCadastroLogin.Designer.cs">
+      <DependentUpon>TelaCadastroLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaLogin.Designer.cs">
+      <DependentUpon>TelaLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaRecuperarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaRecuperarSenha.Designer.cs">
+      <DependentUpon>TelaRecuperarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaSugestaoBug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaSugestaoBug.Designer.cs">
+      <DependentUpon>TelaSugestaoBug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools.cs" />
+    <Compile Include="ListaAlimento.cs" />
+    <Compile Include="ListaAluno.cs" />
+    <Compile Include="ListaEquipamento.cs" />
+    <Compile Include="ListaFinanceiro.cs" />
+    <Compile Include="ListaFuncionario.cs" />
+    <Compile Include="ListaMaterial.cs" />
+    <Compile Include="ListaProduto.cs" />
+    <Compile Include="ListaProfessor.cs" />
+    <Compile Include="Popular.cs" />
+    <Compile Include="TelaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaPrincipal.Designer.cs">
+      <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="usAlimento.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usAlimento.Designer.cs">
+      <DependentUpon>usAlimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usAluno.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usAluno.Designer.cs">
+      <DependentUpon>usAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usEquipamento.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usEquipamento.Designer.cs">
+      <DependentUpon>usEquipamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usFinanceiro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usFinanceiro.Designer.cs">
+      <DependentUpon>usFinanceiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usFuncionario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usFuncionario.Designer.cs">
+      <DependentUpon>usFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usMaterial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usMaterial.Designer.cs">
+      <DependentUpon>usMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usProduto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usProduto.Designer.cs">
+      <DependentUpon>usProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usProfessor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usProfessor.Designer.cs">
+      <DependentUpon>usProfessor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TelaAjuda.resx">
+      <DependentUpon>TelaAjuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaCadastroLogin.resx">
+      <DependentUpon>TelaCadastroLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaLogin.resx">
+      <DependentUpon>TelaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaPrincipal.resx">
+      <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TelaRecuperarSenha.resx">
+      <DependentUpon>TelaRecuperarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaSugestaoBug.resx">
+      <DependentUpon>TelaSugestaoBug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usAlimento.resx">
+      <DependentUpon>usAlimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usAluno.resx">
+      <DependentUpon>usAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usEquipamento.resx">
+      <DependentUpon>usEquipamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usFinanceiro.resx">
+      <DependentUpon>usFinanceiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usFuncionario.resx">
+      <DependentUpon>usFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usProduto.resx">
+      <DependentUpon>usProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usProfessor.resx">
+      <DependentUpon>usProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\208453-P03GET-24.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

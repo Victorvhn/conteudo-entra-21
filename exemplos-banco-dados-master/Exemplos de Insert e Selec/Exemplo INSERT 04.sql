@@ -1,0 +1,14 @@
+﻿CREATE TABLE jogos(
+	nome VARCHAR(100) DEFAULT 'Neymar',
+	quedas SMALLINT 
+);
+
+INSERT INTO jogos -- AUTOMATICAMENTE O NOME RECEBE NEYMAR POIS NÃO É PASSADO O NOME NO INSERT
+(queda)
+VALUES(20);
+
+INSERT INTO jogos 
+(quedas, nome)
+VALUES(2, 'Tite');
+
+SELECT * FROM jogos;

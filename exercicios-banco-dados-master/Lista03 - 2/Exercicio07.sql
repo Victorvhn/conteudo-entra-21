@@ -1,0 +1,1 @@
+﻿UPDATE cidades SET cidade = REPLACE(cidade, 'José', 'Josué') WHERE cidade LIKE '%José%';

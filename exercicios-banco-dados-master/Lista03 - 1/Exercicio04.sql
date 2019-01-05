@@ -1,0 +1,1 @@
+﻿UPDATE pokemons SET categoria = 'Manipulate' WHERE codigo = 100;

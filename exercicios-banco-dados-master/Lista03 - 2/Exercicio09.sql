@@ -1,0 +1,1 @@
+﻿UPDATE cidades SET cidade = 'qualquer texto' WHERE LEN(cidade) = 10;
